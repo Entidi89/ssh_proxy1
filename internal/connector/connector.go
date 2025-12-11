@@ -5,8 +5,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/example/ssh-proxy/internal/util"
-	"github.com/example/ssh-proxy/internal/ws"
+	"github.com/Entidi89/ssh_proxy1/internal/util"
+	"github.com/Entidi89/ssh_proxy1/internal/ws"
 )
 
 // DirectDial TCP
