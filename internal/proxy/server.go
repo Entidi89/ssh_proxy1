@@ -8,8 +8,8 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/ssh_proxy1/internal/ws"
-	"github.com/ssh_proxy1/internal/rbac"
+	"github.com/Entidi89/ssh_proxy1/internal/ws"
+	"github.com/Entidi89/ssh_proxy1/internal/rbac"
 )
 
 type ProxyServer struct {
