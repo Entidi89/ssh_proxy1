@@ -1,4 +1,4 @@
-module github.com/ssh_proxy1
+module github.com/Entidi89/ssh_proxy1
 
 go 1.21
 
