@@ -11,9 +11,9 @@ import (
 
 	"golang.org/x/crypto/ssh"
 
-	"github.com/ssh_proxy1/internal/connector"
-	"github.com/ssh_proxy1/internal/recorder"
-	"github.com/ssh_proxy1/internal/util"
+	"github.com/Entidi89/ssh_proxy1/internal/connector"
+	"github.com/Entidi89/ssh_proxy1/internal/recorder"
+	"github.com/Entidi89/ssh_proxy1/internal/util"
 )
 
 type SSHDependencies struct {
