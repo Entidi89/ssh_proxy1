@@ -4,7 +4,7 @@ import (
 	"flag"
 	"log"
 
-	"github.com/ssh_proxy1/internal/agent"
+	"github.com/Entidi/ssh_proxy1/internal/agent"
 )
 
 func main() {
