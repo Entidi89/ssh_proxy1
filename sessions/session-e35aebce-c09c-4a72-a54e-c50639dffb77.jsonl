@@ -1,0 +1,9 @@
+{"ts":1765529706510,"type":"meta","v":{"remote":"127.0.0.1:39110","start":"2025-12-12T15:55:06+07:00","target":"127.0.0.1:2222","user":"alice"}}
+{"ts":1765529706510,"type":"event","v":"session-start"}
+{"ts":1765529706550,"type":"stdout","v":"U1NILTIuMC1PcGVuU1NIXzguOXAxIFVidW50dS0zdWJ1bnR1MC4xMw0K"}
+{"ts":1765529714382,"type":"stdin","v":"Zw=="}
+{"ts":1765529714543,"type":"stdin","v":"Zw=="}
+{"ts":1765529714654,"type":"stdin","v":"Zg=="}
+{"ts":1765529714796,"type":"stdin","v":"aw=="}
+{"ts":1765529714843,"type":"stdin","v":"Zw=="}
+{"ts":1765529714864,"type":"stdin","v":"ag=="}

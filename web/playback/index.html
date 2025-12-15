@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Session Playback (simple)</title>
+</head>
+<body>
+  <h2>Session Playback (basic)</h2>
+  <input id="file" type="text" placeholder="Enter session file URL (e.g. /web/playback/session-xxx.jsonl)"/>
+  <button id="play">Play</button>
+  <pre id="out" style="background:#000;color:#0f0;padding:10px;height:400px;overflow:auto;"></pre>
+<script>
+document.getElementById('play').onclick = async () => {
+  const url = document.getElementById('file').value;
+  if (!url) { alert('enter file URL'); return; }
+  const res = await fetch(url);
+  const text = await res.text();
+  const lines = text.split('\\n').filter(Boolean);
+  let start = -1, last = 0;
+  const out = document.getElementById('out');
+  for (const line of lines) {
+    const ev = JSON.parse(line);
+    if (start === -1) { start = ev.ts; last = start; }
+    const delta = ev.ts - last;
+    await new Promise(r => setTimeout(r, delta));
+    if (ev.type === 'stdout') {
+      const b = atob(ev.v);
+      out.textContent += b;
+      out.scrollTop = out.scrollHeight;
+    }
+    last = ev.ts;
+  }
+  out.textContent += "\\n-- end --\\n";
+}
+</script>
+</body>
+</html>
